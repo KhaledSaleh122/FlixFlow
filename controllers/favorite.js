@@ -22,7 +22,7 @@ export async function newFavorite(req,res){
             userId :  req.user._id,
             type,
             name: media.name || media.title,
-            release_date : media.release_date,
+            release_date : media.release_date || media.first_air_date,
             poster_path:  media.poster_path,
             original_language :  media.original_language
         });
