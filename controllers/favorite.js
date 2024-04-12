@@ -1,4 +1,4 @@
-import { Favorite } from "../models/Favorite.js";
+import { Favorite } from "../models/favorite.js";
 import { errorHandler } from "./errors.js";
 import { getMovieById } from "./movie.js";
 import { isMediaIdExist } from "./tools.js";
@@ -16,6 +16,7 @@ export async function newFavorite(req,res){
     if(response.err){ res.status(response.status).json({err: response.err}); return; }
     const media = response.data;
     if(!media){ res.status(500).json({err: "Oops! Something went wrong. Please try again."});return; }
+
     try {
         await Favorite.create({
             tmdbId : id,
