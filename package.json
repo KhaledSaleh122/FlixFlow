@@ -21,6 +21,7 @@
     "express-validator": "^7.0.1",
     "mongoose": "^8.2.2",
     "passport": "^0.7.0",
-    "passport-local-mongoose": "^8.0.0"
+    "passport-local-mongoose": "^8.0.0",
+    "socket.io": "^4.7.5"
   }
 }
