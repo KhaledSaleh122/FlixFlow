@@ -95,6 +95,8 @@ function updateRoomData(action,socket,io){
         rooms[socket.roomId].url = action.url;
         rooms[socket.roomId].subtitles = action.subtitles;
         rooms[socket.roomId].mediaType = action.type;
+        rooms[socket.roomId].origin = action.origin;
+        rooms[socket.roomId].referer = action.referer;
         io.to(socket.roomId).emit('UpdateData',{data : rooms[socket.roomId]});
     });
 }

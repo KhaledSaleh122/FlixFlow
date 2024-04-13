@@ -1,4 +1,4 @@
-import { Favorite } from "../models/Favorite.js";
+import { Favorite } from "../models/favorite.js";
 import { errorHandler } from "./errors.js";
 import { getMovieById } from "./movie.js";
 import { isMediaIdExist } from "./tools.js";

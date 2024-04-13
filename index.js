@@ -63,14 +63,6 @@ baseRoute.use("/search",searchRouter);
 // baseRoute.use('/s',subRouter)
 baseRoute.use("/user",accountRouter);
 
-baseRoute.use("/flixflow-extension",(req,res)=>{
-    res.sendFile(__dirname+"/FF-extension.rar",{
-        headers: {
-            'Content-Type': 'application/x-rar-compressed',
-            'Content-Disposition': 'attachment; filename=flixflow-extension.rar'
-        }
-    });
-})
 
 app.use(function (req, res, next) {
     res.sendFile(__dirname+'/dist/index.html');
