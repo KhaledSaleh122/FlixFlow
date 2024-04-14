@@ -28,7 +28,6 @@ Welcome to FlixFlow, an innovative online streaming website crafted for a modern
 
 - **User Accounts**: Personal profiles for a customized streaming experience.
 - **Favorites**: An option to bookmark favorite movies.
-- **Playback Memory**: Resume watching from where you left off.
 - **Search Movies**: Find movies easily using the TMDB API.
 - **Watch Together**: Real-time movie watching with friends using Socket.io.
 
